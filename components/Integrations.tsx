@@ -24,7 +24,7 @@ export const Integrations: React.FC = () => {
                     <div className="w-32 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-xl shadow-indigo-200 z-20 relative">
                         <div className="flex items-center gap-2 text-white">
                             <Feather size={18} />
-                            <span className="font-medium tracking-wide">Quillio</span>
+                            <span className="font-medium tracking-wide">Kairos</span>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@ export const Integrations: React.FC = () => {
 
         <ScrollReveal delay={0.3}>
             <p className="max-w-2xl mx-auto text-xs text-gray-500 mt-12 leading-relaxed">
-                Whether you're reflecting on your calendar, processing Slack conversations, or planning in Linear, Quillio pulls the context you need into one coherent space.
+                Whether you're using Jupyter notebooks, SageMaker, Vertex AI, or Kubernetes, Kairos integrates seamlessly to track and optimize costs across your entire ML infrastructure.
             </p>
         </ScrollReveal>
 

@@ -32,7 +32,7 @@ export const ModesSection: React.FC = () => {
         <div className="text-center mb-20">
             <ScrollReveal>
                 <h2 className="text-4xl font-serif text-white mb-4">A complete ecosystem for your mind.</h2>
-                <p className="text-blue-100/60">Different thoughts need different shapes. Quillio adapts to you.</p>
+                <p className="text-blue-100/60">Different workloads need different optimization. Kairos adapts to your ML infrastructure.</p>
             </ScrollReveal>
         </div>
 

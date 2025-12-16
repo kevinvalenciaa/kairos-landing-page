@@ -19,7 +19,7 @@ export const GuardianSection: React.FC = () => {
                         Meet your Jarvis <br/> <span className="italic text-white/40">for life decisions.</span>
                     </h2>
                     <p className="text-xl md:text-2xl text-blue-100/60 max-w-2xl mx-auto leading-relaxed font-light text-balance">
-                        Quillio doesn't just record your life; it remembers it. It gently surfaces patterns between your daily frustrations and your long-term dreams.
+                        Kairos doesn't just track your costs; it optimizes them. It automatically schedules jobs, pauses idle resources, and prevents waste before deployment.
                     </p>
                 </ScrollReveal>
             </div>

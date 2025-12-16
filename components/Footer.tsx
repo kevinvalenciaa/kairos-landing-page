@@ -12,13 +12,13 @@ export const Footer: React.FC = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center mb-24">
         <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
-                Clarity is a practice. Start today.
+                Eliminate infrastructure waste. Start today.
             </h2>
             <p className="text-blue-100/60 text-sm mb-10">
-                3 minutes. No setup. Just you and Quillio.
+                One-click Jupyter plugin install. See costs in real-time. Optimize automatically.
             </p>
             <button className="px-10 py-4 text-sm font-medium text-slate-900 bg-white rounded-full hover:bg-blue-50 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                Start your reflection
+                Join Waitlist
             </button>
         </ScrollReveal>
       </div>
@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-white/30">
             <div className="flex items-center gap-2">
                  <Feather size={16} className="text-white/50" />
-                <span className="font-serif font-medium text-white/70">Quillio</span>
+                <span className="font-serif font-medium text-white/70">Kairos</span>
                 <span>© 2025</span>
             </div>
 

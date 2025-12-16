@@ -37,7 +37,7 @@ export const StreamWidget = () => (
             <Sparkles size={12} strokeWidth={1.5} />
         </div>
         <div className="flex-1 pt-1">
-             <div className="text-[9px] text-blue-400 mb-1 font-bold tracking-wide">QUILLIO</div>
+             <div className="text-[9px] text-blue-400 mb-1 font-bold tracking-wide">KAIROS</div>
              <div className="text-[11px] text-blue-200/70 p-3 rounded-xl bg-white/5 border border-white/10 leading-relaxed shadow-sm">
                 "Fear of 'not good enough' has blocked shipping <span className="font-semibold text-white">4 times</span> this month. What is the smallest version of 'good enough'?"
             </div>

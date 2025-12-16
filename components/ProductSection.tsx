@@ -58,45 +58,45 @@ export const ProductSection: React.FC = () => {
                     The Vision
                 </div>
                 <h2 className="text-4xl font-medium text-gray-900 mb-4">
-                    A complete ecosystem <br/> for your mind.
+                    Complete cost intelligence <br/> for AI infrastructure.
                 </h2>
                 <p className="text-gray-500 text-sm">
-                    Quillio recognizes that all thinking is connected—from your morning doubts to your career strategy.
+                    Kairos combines runtime optimization with pre-deployment prevention to eliminate waste from training to production.
                 </p>
             </ScrollReveal>
         </div>
 
         <div className="space-y-12">
-            {/* Feature 1: Stream Mode */}
+            {/* Feature 1: Runtime Optimization */}
             <FeatureBlock 
-                title="Stream Mode: Capture the flow."
-                description="A low-friction interface for daily reflection. Mix handwriting, voice, and text seamlessly. Quillio analyzes your entries in real-time to ask the right questions."
+                title="Runtime Optimization: Capture 70% of waste immediately."
+                description="Intelligent job scheduling queues training for off-peak hours with spot instances. Auto-pause detects idle notebooks and pauses them automatically. GPU right-sizing recommends optimal instance types based on actual utilization."
                 widget={<StreamWidget />}
                 bgImage="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=2670&auto=format&fit=crop"
             />
             
-            {/* Feature 2: Canvas Mode */}
+            {/* Feature 2: Experiment-Level Cost Attribution */}
             <FeatureBlock 
                 reverse
-                title="Canvas Mode: Deep spatial thinking."
-                description="When daily reflection isn't enough, open a canvas. Map out complex decisions, strategy, and life pivots with an infinite whiteboard. Quillio acts as your partner, spotting contradictions and connecting dots."
+                title="Experiment-Level Cost Attribution: Know what costs what."
+                description="Track costs at the experiment level—see exactly how much each training run, notebook session, or model deployment costs. Compare experiments side-by-side and identify optimization opportunities."
                 widget={<CanvasWidget />}
                 bgImage="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2670&auto=format&fit=crop"
             />
 
-            {/* Feature 3: Insights */}
+            {/* Feature 3: LLM Inference Optimization */}
             <FeatureBlock 
-                title="Insights: Patterns, not just pages."
-                description="See the patterns invisible to the naked eye. Quillio tracks your mood, topics, and goals over months, turning your history into a map for future growth."
+                title="LLM Inference Optimization: Reduce costs by 68-86%."
+                description="Semantic caching detects similar prompts and returns cached responses. Model routing sends 80% of queries to cheaper models, escalating only complex requests. Dynamic batching improves throughput 3-5x."
                 widget={<InsightWidget />}
                 bgImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
             />
 
-            {/* Feature 4: Privacy */}
+            {/* Feature 4: Pre-Deployment Intelligence */}
             <FeatureBlock 
                 reverse
-                title="Privacy: Your mind, encrypted."
-                description="Your thoughts are yours alone. With zero-knowledge encryption and optional on-device processing, even we can't read your journals."
+                title="Pre-Deployment Intelligence: Prevent waste before merge."
+                description="PR-level cost impact analysis shows how model architecture changes affect training costs. Cost regression detection blocks merges that exceed budgets. Multi-cloud simulation finds the cheapest cloud for each workload."
                 widget={<PrivacyWidget />}
                 bgImage="https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=2832&auto=format&fit=crop"
             />

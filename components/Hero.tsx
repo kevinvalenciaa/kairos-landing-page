@@ -4,21 +4,21 @@ import { Check, X } from 'lucide-react';
 
 const TESTIMONIALS = [
   {
-    name: 'Elena Mora',
-    role: 'Founder, Crescent Studio',
-    quote: "I didn't need another productivity tool, I needed calm to think and make decisions. Quillio gave me that pause button.",
+    name: 'ML Engineering Lead',
+    role: 'Series B AI Startup',
+    quote: "I have no idea how much my experiments cost until the monthly bill arrives. We probably have notebooks running idle for days, but I can't tell. I'd kill for something that just shows me what's actually costing money.",
     avatar: '/elena.png'
   },
   {
-    name: 'Marcus Lee',
-    role: 'CEO, Northwind Labs',
-    quote: 'Quillio remembers the threads between my board updates and daily standups. It has become my quiet chief of staff.',
+    name: 'ML Infrastructure Engineer',
+    role: 'Tech Company',
+    quote: "Our GPU spend went from $200K to $400K last month and I have zero visibility into why. Finance wants answers but our FinOps tools can't even tell training from inference. We need something built for ML workloads.",
     avatar: '/marcus.png'
   },
   {
-    name: 'Priya Nair',
-    role: 'Product Lead, Lumen',
-    quote: 'It mirrors back the emotional patterns hiding in my notes. That perspective keeps our roadmap grounded in reality.',
+    name: 'Engineering Manager',
+    role: 'Series A AI Company',
+    quote: "We're burning money on on-demand instances during peak hours because we don't know when to schedule jobs. If something could just tell us when to optimize,that would be a game changer.",
     avatar: '/priya.png'
   }
 ];
@@ -159,17 +159,10 @@ export const Hero: React.FC = () => {
         </div>
       )}
       
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/quillio-hero.png" 
-          alt="Background" 
-          className="w-full h-full object-cover opacity-100"
-        />
-        {/* Heavy darkening overlay for contrast */}
-        <div className="absolute inset-0 bg-slate-900/40 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-transparent to-slate-900/80"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-transparent to-slate-900/40"></div>
+      {/* Clean Modern Background Glow */}
+      <div className="absolute inset-0 z-0 overflow-hidden bg-[#0A0A0A]">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-zinc-800/40 rounded-full blur-[120px] opacity-80"></div>
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-zinc-700/20 rounded-full blur-[100px] opacity-60 mix-blend-screen"></div>
       </div>
 
       {/* Concentric Circles / Ripples Effect */}
@@ -185,20 +178,20 @@ export const Hero: React.FC = () => {
             <div className="hidden lg:flex flex-col gap-16 col-span-3 text-left pt-20">
                 <ScrollReveal delay={0.4}>
                     <div className="space-y-1">
-                        <div className="text-3xl font-serif text-white">41%</div>
-                        <div className="text-sm text-blue-100/70 font-light leading-relaxed">drop in perceived stress<br/>after reflective sessions</div>
+                        <div className="text-3xl font-serif text-white">40-60%</div>
+                        <div className="text-sm text-blue-100/70 font-light leading-relaxed">GPU idle time<br/>across ML workloads</div>
                     </div>
                 </ScrollReveal>
                 <ScrollReveal delay={0.5}>
                      <div className="space-y-1">
-                        <div className="text-3xl font-serif text-white">10+</div>
-                        <div className="text-sm text-blue-100/70 font-light leading-relaxed">founders in<br/>early access</div>
+                        <div className="text-3xl font-serif text-white">$200B+</div>
+                        <div className="text-sm text-blue-100/70 font-light leading-relaxed">projected AI infrastructure<br/>spend by 2028</div>
                     </div>
                 </ScrollReveal>
                  <ScrollReveal delay={0.6}>
                      <div className="space-y-1">
-                        <div className="text-3xl font-serif text-white">65%</div>
-                        <div className="text-sm text-blue-100/70 font-light leading-relaxed">report higher clarity<br/>in long-term planning</div>
+                        <div className="text-3xl font-serif text-white">45%</div>
+                        <div className="text-sm text-blue-100/70 font-light leading-relaxed">average cost reduction<br/>for ML teams</div>
                     </div>
                 </ScrollReveal>
             </div>
@@ -208,20 +201,20 @@ export const Hero: React.FC = () => {
                  <ScrollReveal>
                     <div className="inline-flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 lg:mb-8">
                         <span className="h-px w-8 sm:w-12 bg-white/20"></span>
-                        <span className="text-[10px] sm:text-[11px] font-bold text-blue-100/80 uppercase tracking-[0.25em] font-sans">clarity between decisions</span>
+                        <span className="text-[10px] sm:text-[11px] font-bold text-blue-100/80 uppercase tracking-[0.25em] font-sans">AI/ML Cost Intelligence</span>
                         <span className="h-px w-8 sm:w-12 bg-white/20"></span>
                     </div>
                 </ScrollReveal>
 
                 <ScrollReveal delay={0.1}>
-                    <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-medium text-white mb-4 sm:mb-6 lg:mb-8 leading-[1.1] tracking-tight text-balance drop-shadow-sm px-2 sm:px-0">
-                    Make better decisions with an AI that <span className="italic text-blue-200/90 font-serif">remembers</span> your life.
+                    <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-white mb-4 sm:mb-6 lg:mb-8 leading-[1.1] tracking-tight text-balance drop-shadow-sm px-2 sm:px-0">
+                    Maximize Your GPU Investment.
                     </h1>
                 </ScrollReveal>
 
                 <ScrollReveal delay={0.2}>
-                    <p className="text-base sm:text-lg md:text-xl text-blue-100/80 max-w-2xl mx-auto mb-6 sm:mb-8 lg:mb-12 leading-relaxed font-light text-balance px-2 sm:px-0">
-                    Quillio turns your daily brain dumps into one crystal clear weekly plan, then makes sure your calendar and tasks actually match it.
+                    <p className="text-sm sm:text-base md:text-lg text-blue-100/80 max-w-2xl mx-auto mb-6 sm:mb-8 lg:mb-12 leading-relaxed font-light text-balance px-2 sm:px-0">
+                    Kairos is the AI/ML-native cost intelligence platform that eliminates 40-60% of GPU waste. From training to inference, we optimize your entire ML infrastructure spend automatically.
                     </p>
                 </ScrollReveal>
 
@@ -286,11 +279,11 @@ export const Hero: React.FC = () => {
 
                         <div className="mb-4">
                             <h4 className="text-white font-medium">{currentTestimonial.name}</h4>
-                            <p className="text-xs text-blue-200 uppercase tracking-wider mt-1">{currentTestimonial.role}</p>
+                            <p className="text-xs text-white/60 uppercase tracking-wider mt-1">{currentTestimonial.role}</p>
                         </div>
 
-                        <p className="text-sm text-blue-100/90 leading-relaxed italic opacity-90 transition-opacity duration-500">
-                            “{currentTestimonial.quote}”
+                        <p className="text-sm text-white/80 leading-relaxed italic opacity-90 transition-opacity duration-500">
+                            "{currentTestimonial.quote}"
                         </p>
                         
                         <div className="flex gap-1 mt-4 text-white/60 justify-center lg:justify-start">
@@ -310,29 +303,29 @@ export const Hero: React.FC = () => {
         {/* Mobile Stats (Visible only on small screens) */}
         <div className="lg:hidden grid grid-cols-3 gap-3 sm:gap-4 pb-8 sm:pb-12 pt-8 sm:pt-12 text-center max-w-md mx-auto border-t border-white/5 mt-8 sm:mt-12 px-4 sm:px-0">
              <div>
-                <div className="text-2xl font-serif text-white">41%</div>
-                <div className="text-[10px] text-blue-100/60 uppercase tracking-wider mt-1">Less Stress</div>
+                <div className="text-2xl font-serif text-white">40-60%</div>
+                <div className="text-[10px] text-blue-100/60 uppercase tracking-wider mt-1">GPU Waste</div>
              </div>
              <div>
-                <div className="text-2xl font-serif text-white">10+</div>
-                <div className="text-[10px] text-blue-100/60 uppercase tracking-wider mt-1">Founders</div>
+                <div className="text-2xl font-serif text-white">$200B+</div>
+                <div className="text-[10px] text-blue-100/60 uppercase tracking-wider mt-1">By 2028</div>
              </div>
              <div>
-                <div className="text-2xl font-serif text-white">65%</div>
-                <div className="text-[10px] text-blue-100/60 uppercase tracking-wider mt-1">Clarity</div>
+                <div className="text-2xl font-serif text-white">45%</div>
+                <div className="text-[10px] text-blue-100/60 uppercase tracking-wider mt-1">Savings</div>
              </div>
         </div>
 
         {/* Bottom Footer Text */}
         <div className="absolute bottom-8 left-0 right-0 text-center hidden lg:block">
              <p className="text-[10px] font-medium text-white/40 uppercase tracking-widest">
-                Created for clarity in thought leadership
+                The cost intelligence layer for the AI era
              </p>
         </div>
         
         <div className="text-center lg:hidden pb-4 sm:pb-8 pt-4 sm:pt-0">
              <p className="text-[10px] font-medium text-white/40 uppercase tracking-widest">
-                Created for clarity in thought leadership
+                The cost intelligence layer for the AI era
              </p>
         </div>
       </div>

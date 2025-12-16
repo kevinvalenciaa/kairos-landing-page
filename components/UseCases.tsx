@@ -20,39 +20,39 @@ export const UseCases: React.FC = () => {
     <section className="py-24 bg-slate-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-12 flex items-end justify-between">
         <ScrollReveal>
-            <h2 className="text-3xl font-serif text-white">Clarity for every context.</h2>
+            <h2 className="text-3xl font-serif text-white">Optimization for every workload.</h2>
         </ScrollReveal>
       </div>
 
       <ScrollReveal delay={0.1} width="100%">
         <div className="flex overflow-x-auto pb-12 px-6 snap-x scroll-pl-6 no-scrollbar -mx-6 md:mx-auto md:px-0 max-w-7xl">
             <UseCaseCard 
-                title="Founder Decisions"
+                title="Training Job Optimization"
                 color="bg-blue-500/10 text-blue-400 border border-blue-500/20"
                 borderColor="border-blue-500"
-                quote="I'm paralyzed between two MVP features. I don't know which to ship."
-                output="Quillio: You've mentioned 'speed' 9 times this week. Feature A aligns with speed. Feature B is a distraction."
+                quote="Our training jobs cost $2,400 each. We run 20 per month—that's $48K/month."
+                output="Kairos: Your jobs run during peak hours on on-demand A100s. Scheduling for 2am with spot instances reduces cost to $960 per job (60% savings). Monthly savings: $28,800."
             />
             <UseCaseCard 
-                title="Career Pivot"
+                title="Idle Notebook Detection"
                 color="bg-purple-500/10 text-purple-400 border border-purple-500/20"
                 borderColor="border-purple-500"
-                quote="I hate my PM job. I want to be a designer but I'm scared."
-                output="Quillio: Let's map a 6-month bridge. You already do design work in your side project. You're closer than you think."
+                quote="We have notebooks running idle for days. Our GPU bill is out of control."
+                output="Kairos: Detected 12 idle notebooks running for 2+ hours. Auto-paused them, saving $4,347 this month. You can resume anytime with one click."
             />
             <UseCaseCard 
-                title="Relationships"
+                title="LLM Inference Costs"
                 color="bg-rose-500/10 text-rose-400 border border-rose-500/20"
                 borderColor="border-rose-500"
-                quote="We keep fighting about the same stupid scheduling issue."
-                output="Quillio: This isn't about the schedule. It's about feeling prioritized. You mentioned this pattern 3 weeks ago too."
+                quote="Our LLM inference costs jumped from $50K to $200K/month. We're using GPT-4 for everything."
+                output="Kairos: Routing 80% of queries to GPT-4o-mini and using semantic caching reduces costs by 78%. New monthly cost: $44K. Savings: $156K/month."
             />
              <UseCaseCard 
-                title="Habit Formation"
+                title="GPU Right-Sizing"
                 color="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
                 borderColor="border-emerald-500"
-                quote="I missed the gym again. I'm so lazy."
-                output="Quillio: You're not lazy. You only miss the gym on days you have 8am meetings. Let's change the time."
+                quote="We're using p4d.24xlarge for inference but GPU utilization is only 42%."
+                output="Kairos: Switching to 4x p4d.xlarge maintains performance while reducing cost by $384/day. Annual savings: $140K. Risk: None (still over-provisioned)."
             />
         </div>
       </ScrollReveal>

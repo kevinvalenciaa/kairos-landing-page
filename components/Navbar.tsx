@@ -22,11 +22,11 @@ export const Navbar: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer group opacity-90 hover:opacity-100 transition-opacity">
             <img 
-                src="/white-quillio.png" 
-                alt="Quillio" 
-                className="w-5 h-5"
+                src="/Component 2.png" 
+                alt="Kairos" 
+                className="h-5 w-auto object-contain"
             />
-            <span className="text-lg font-serif font-medium tracking-tight text-white">Quillio</span>
+            <span className="text-lg font-serif font-medium tracking-tight text-white">Kairos</span>
         </div>
 
         {/* Desktop Links removed */}
