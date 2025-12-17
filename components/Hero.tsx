@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ScrollReveal } from './ui/ScrollReveal';
 import { Check, X } from 'lucide-react';
+import LightRays from './ui/LightRays';
 
 const TESTIMONIALS = [
   {
@@ -159,10 +160,25 @@ export const Hero: React.FC = () => {
         </div>
       )}
       
-      {/* Clean Modern Background Glow */}
+      {/* Clean Modern Background Glow & Light Rays */}
       <div className="absolute inset-0 z-0 overflow-hidden bg-[#0A0A0A]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-zinc-800/40 rounded-full blur-[120px] opacity-80"></div>
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-zinc-700/20 rounded-full blur-[100px] opacity-60 mix-blend-screen"></div>
+          
+          <div className="absolute inset-0 z-[1] opacity-75 mix-blend-screen pointer-events-none">
+            <LightRays
+              raysOrigin="top-center"
+              raysColor="#6b7280" 
+              raysSpeed={1.5}
+              lightSpread={0.8}
+              rayLength={1.2}
+              followMouse={true}
+              mouseInfluence={0.1}
+              noiseAmount={0.05}
+              distortion={0.05}
+              className="w-full h-full"
+            />
+          </div>
       </div>
 
       {/* Concentric Circles / Ripples Effect */}

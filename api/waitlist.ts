@@ -217,9 +217,22 @@ export default async function handler(
     ]);
 
     const attempts = [dbResult, slackResult, emailResult];
-    const ok = attempts.some((attempt) => attempt.ok);
+    const hasSuccess = attempts.some((attempt) => attempt.ok);
+    const hasErrors = attempts.some((attempt) => !attempt.ok && !attempt.skipped);
+    const allSkipped = attempts.every((attempt) => attempt.skipped);
 
-    if (!ok) {
+    // If all services are skipped (not configured), log to console as fallback
+    if (allSkipped) {
+      console.log('Waitlist signup (no services configured):', {
+        email: submission.email,
+        source: submission.source,
+        timestamp: submission.created_at
+      });
+    }
+
+    // If we have at least one success, or all are just skipped (not configured), consider it successful
+    // Only fail if there are actual errors (not just skipped services)
+    if (!hasSuccess && hasErrors) {
       console.error('Waitlist submission failed', attempts);
       res
         .status(500)
